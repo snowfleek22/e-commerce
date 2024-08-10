@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jordan 1</title>
+    <link rel="stylesheet" href="css/info.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <div class="product-name">
+                <h4><span class="item-name">Samsung</span></h4>
+            </div>
+            <section class="item">
+                <div class="item_info">
+                    <a href="pics/samsung1.jpg">
+                        <img src="pics/samsung1.jpg" alt="shopping-bags">
+                    </a>
+                </div>
+                <div class="item_info">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Est inventore sunt recusandae quae nemo molestias natus voluptatibus tenetur? Magnam dicta voluptatibus inventore rerum repellat perspiciatis velit nobis enim mollitia alias?</p>
+                    <div class="shopping-info">
+                        <div class="price padd-15">
+                            <h5>Price: <span class="price">$300.00</span></h5>
+                        </div>
+                        <div class="colors padd-15">
+                            <label for="color">Color: </label>
+                            <select class="color" id="color">
+                                <option value="white">White</option>
+                                <option value="yellow">Yellow</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                                <option value="black">Black</option>
+                            </select>
+                        </div>
+                        <div class="quantity padd-15">
+                            <label for="quantity">Quantity: </label>
+                            <input type="number" name="quantity" id="quantity" min="1" value="1">
+                        </div>
+                        <div class="purchase padd-15">
+                            <button type="button" onclick="addToCart()" id="add-to-cart">Add to Cart</button>
+                            <button type="button" onclick="buyNow()" id="buy-now">Buy Now</button>
+                            <label for="heart">Wishlist:</label>
+                            <span class="heart" onclick="addToWishlist()" id="wishlist">&#9825;</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="description"></section>
+        </div>
+        <div class="container description">
+            <div class="main-content">
+                <div class="links">
+                    <a href="#description" id="l1">Description</a>
+                    <a href="#reviews" id="l2">Reviews</a> 
+                </div>
+                <div class="details" id="description">
+                    <h4>Specification</h4>
+                    <table>
+                        <tr>
+                            <td>Brand</td>
+                            <td>Samsung</td>
+                        </tr>
+                        <tr>
+                            <td>Model</td>
+                            <td>A15</td>
+                        </tr>
+                        <tr>
+                            <td>Condition</td>
+                            <td>Brand new</td>
+                        </tr>
+                        <tr>
+                            <td>Screen Size</td>
+                            <td>6.5 inch</td>
+                        </tr>
+                        <tr>
+                            <td>Ram</td>
+                            <td>4GB</td>
+                        </tr>
+                        <tr>
+                            <td>Back Camera</td>
+                            <td>50MP</td>
+                        </tr>
+                        <tr>
+                            <td>Front Camera</td>
+                            <td>13MP</td>
+                        </tr>
+                        <tr>
+                            <td>Rom</td>
+                            <td>128GB</td>
+                        </tr>
+                        <tr>
+                            <td>Sim Type</td>
+                            <td>Dual</td>
+                        </tr>
+                    </table>
+                    <div class="img-description">
+                        <div class="img">
+                            <div class="pics">
+                                <div class="item">
+                                    <img src="pics/samsung.jpg" alt="img1">
+                                </div>
+                                <div class="item">
+                                    <img src="pics/samsung1.jpg" alt="img2">
+                                </div>
+                                <div class="item">
+                                    <img src="pics/samsung2.jpg" alt="img3">
+                                </div>
+                                <div class="item">
+                                    <img src="pics/pexels-velroy-4048419.jpg" alt="img4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reviews" id="reviews">
+                    <div class="header-review">
+                        <h4>Ratings & Reviews</h4>
+                    </div>
+                    <div class="ratings">
+                        <div class="person">
+                            <div class="img">
+                                <img src="pics/5aa9d25f5fca7c73ba64a3360dffa123.png" alt="img1">
+                            </div>
+                            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="rating">
+                                <span class="star selected" data-value="1">&#9733;</span>
+                                <span class="star selected" data-value="2">&#9733;</span>
+                                <span class="star selected" data-value="3">&#9733;</span>
+                                <span class="star selected" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="img">
+                                <img src="pics/IMG_20240710_165856_681.jpg" alt="img1">
+                            </div>
+                            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="rating">
+                                <span class="star selected" data-value="1">&#9733;</span>
+                                <span class="star selected" data-value="2">&#9733;</span>
+                                <span class="star selected" data-value="3">&#9733;</span>
+                                <span class="star selected" data-value="4">&#9733;</span>
+                                <span class="star selected" data-value="5">&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="img">
+                                <img src="pics/IMG_20240727_160546_786.jpg" alt="img1">
+                            </div>
+                            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="rating">
+                                <span class="star selected" data-value="1">&#9733;</span>
+                                <span class="star selected" data-value="2">&#9733;</span>
+                                <span class="star selected" data-value="3">&#9733;</span>
+                                <span class="star" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="img">
+                                <img src="pics/5aa9d25f5fca7c73ba64a3360dffa123.png" alt="img1">
+                            </div>
+                            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="rating">
+                                <span class="star selected" data-value="1">&#9733;</span>
+                                <span class="star selected" data-value="2">&#9733;</span>
+                                <span class="star selected" data-value="3">&#9733;</span>
+                                <span class="star selected" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <div class="img">
+                                <img src="pics/p1.jpg" alt="img1">
+                            </div>
+                            <p class="review">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <div class="rating">
+                                <span class="star selected" data-value="1">&#9733;</span>
+                                <span class="star selected" data-value="2">&#9733;</span>
+                                <span class="star selected" data-value="3">&#9733;</span>
+                                <span class="star selected" data-value="4">&#9733;</span>
+                                <span class="star" data-value="5">&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="payments">
+                <div class="partners">
+                    <h5>We are partners with</h5>
+                    <div class="payments-icon">
+                        <div class="payment-img">
+                            <img src="pics/paypal-3384015_1920.png" alt="paypal">
+                        </div>
+                        <div class="payment-img">
+                            <img src="pics/Airtel_logo-01.png" alt="airtel money">
+                        </div>
+                        <div class="payment-img">
+                            <img src="pics/SafM-PESA-Logo.jpg" alt="mpesa">
+                        </div>
+                        <div class="payment-img">
+                            <img src="pics/paypal-3384015_1920.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <!-- *** footer section start***-->
+         <section class="footer">
+            <div class="row">
+                <div class="footer-container">
+                    <div class="group">
+                        <div class="group-info">
+                            <h2>Shopping guideline</h2>
+                            <ul>
+                                <li><a href="#">How to pay</a></li>
+                                <li><a href="#">How to shop</a></li>
+                                <li><a href="#">Forgot your password?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="group-info">
+                            <h2>Customer help</h2>
+                            <ul>
+                                <li><a href="#">terms & conditions</a></li>
+                                <li><a href="#">After sale policy</a></li>
+                                <li><a href="#">Deleivery & Shipping</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="group-info">
+                            <h2>Bussiness</h2>
+                            <ul>
+                                <li><a href="#">Want to sell something?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="group" id="contact">
+                        <div class="group-info">
+                            <h2>Contact us</h2>
+                            <ul>
+                                <li><a href="#" class="fa fa-whatsapp">Whatsapp</a></li>
+                                <li><a href="#" class="fa fa-twitter">twitter</a></li>
+                                <li><a href="#" class="fa fa-envelope">email</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <footer>
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+    <script src="js/info.js"></script>
+</body>
+</html>

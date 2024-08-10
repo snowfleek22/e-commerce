@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/" class="logo"><span>E-commerce</span></a>
+            <a href="/shop">Shop</a>
+            <a href="index.html">Home</a>
+            <a href="logins/login.html">Account</a>
+            <a href="#" class="active">Cart</a>
+            <input type="search" placeholder="Search...">
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Items</h1>
+        <section class="cart-items" id="cart-items">
+            <!-- Cart items will be dynamically injected here -->
+        </section>
+
+        <section class="cart-totals">
+            <div class="subtotal">Subtotal: $0.00</div>
+            <div class="shipping">Estimated Shipping: $0.00</div>
+            <div class="taxes">Taxes: $0.00</div>
+            <div class="total">Total: $0.00</div>
+            <input type="text" placeholder="Enter Promo Code" class="promo-code">
+            <button class="apply-promo">Apply</button>
+        </section>
+
+        <section class="cart-actions">
+            <a href="shoes.html " class="continue-shopping">Continue Shopping</a>
+            <button class="checkout">Checkout</button>
+        </section>
+    </main>
+
+    <footer>
+        <a href="/about">About Us</a>
+        <a href="/contact">Contact Us</a>
+        <a href="/faqs">FAQs</a>
+        <a href="/return-policy">Return Policy</a>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+</body>
+</html>

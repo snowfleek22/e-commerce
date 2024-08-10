@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor Adventure Gear Store</title>
+    <link rel="stylesheet" href="style.ss">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Outdoor Gear</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button type="submit">Search</button>
+            </div>
+            <div class="account">
+                <a href="#">Login</a> / <a href="#">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to Outdoor Gear Store</h1>
+            <p>Explore our wide range of gear for your outdoor adventures!</p>
+            <a href="#" class="cta-button">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Product Listings -->
+    <section class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <!-- Example product card (repeat for each product) -->
+                <div class="product-card">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h3>Product Name</h3>
+                    <p class="price">$99.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Product Name</h3>
+                    <p class="price">$79.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h3>Product Name</h3>
+                    <p class="price">$79.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <style>
+                    .product-grid{
+                        display: flex;
+                        position: relative;
+                    }
+                    .product-card {
+                        flex: 0 0 33.33%;
+                        max-width: 33.33%;
+                        width: 100%;
+                    }
+                </style>
+                <!-- Add more products as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section class="shopping-cart">
+        <div class="container">
+            <h2>Shopping Cart</h2>
+            <div class="cart-items">
+                <!-- Example cart item (repeat for each item) -->
+                <div class="cart-item">
+                    <img src="product1.jpg" alt="Product 1">
+                    <div class="item-details">
+                        <h3>Product Name</h3>
+                        <p class="price">$99.99</p>
+                        <input type="number" value="1">
+                        <button class="update-cart">Update</button>
+                        <button class="remove-from-cart">Remove</button>
+                    </div>
+                </div>
+                <!-- Add more cart items as needed -->
+            </div>
+            <div class="cart-summary">
+                <p>Total: <span class="total-price">$99.99</span></p>
+                <button class="checkout-button">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- User Account -->
+    <section class="user-account">
+        <div class="container">
+            <h2>My Account</h2>
+            <div class="account-details">
+                <h3>Order History</h3>
+                <div class="order-history">
+                    <!-- Example order history (repeat for each order) -->
+                    <div class="order">
+                        <p><strong>Order #12345</strong> - Delivered on MM/DD/YYYY</p>
+                        <ul class="order-items">
+                            <li>Product 1 - $99.99</li>
+                            <li>Product 2 - $79.99</li>
+                        </ul>
+                    </div>
+                    <!-- Add more orders as needed -->
+                </div>
+                <h3>Wishlist</h3>
+                <div class="wishlist">
+                    <!-- Example wishlist items (repeat for each item) -->
+                    <div class="wishlist-item">
+                        <h4>Product Name</h4>
+                        <p class="price">$99.99</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                        <button class="remove-from-wishlist">Remove</button>
+                    </div>
+                    <!-- Add more wishlist items as needed -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>About Us</h3>
+                    <p>We provide high-quality outdoor gear for adventurers.</p>
+                </div>
+                <div class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <p>Email: info@outdoorgear.com<br>Phone: +1-123-456-7890</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Information</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social-media">
+                    <h3>Follow Us</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="facebook-icon.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="twitter-icon.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="instagram-icon.png" alt="Instagram"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 Outdoor Gear. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript (for interactivity) -->
+    <script src="script.js"></script>
+</body>
+</html>

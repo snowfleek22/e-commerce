@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+::before,::after{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+.main-container
+{
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.header
+{
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid #706a6a;
+    margin: 0;
+    padding: 0;
+    height:140px;
+    background-color: aliceblue;
+    z-index: 101;
+}
+.categories
+{
+    display: flex;
+    justify-content: center;
+    margin: 7px 20px;
+    padding: 10px;
+
+}
+.all-categories
+{
+    padding-top: 140px;
+}
+
+.categories .item
+{
+    position: relative;
+    display: block;
+    width: 70px;
+    height: auto;
+    margin: 10px;
+}
+.categories .item a
+{
+    list-style: none;
+    text-align: center;
+}
+.categories .item a h5
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: #302f50d2;
+}
+.categories .item img
+{
+    width: 100%;
+    height: 70px;
+    border-radius: 7px;
+}
+
+/********** all categories section********/
+section
+{
+    margin: 0;
+    padding: 0;
+    background-color: #b9b9bd;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+}
+.container
+{
+    position: relative;
+    display: flex;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.container .item
+{
+    position: relative;
+    max-width: 25%;
+    height: auto;
+    flex: 0 0 25%;
+    width: 100%;
+
+}
+.item-info
+{
+    margin: 10px;
+    padding: 7px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f5;
+    border-radius: 10px;
+}
+
+.item-info img
+{
+    width: 100%;
+
+}
+.item-info h5
+{
+    font-size: 18px;
+    color: #4156f7;
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+}
+.item-info p 
+{
+    font-size: 16px;
+    font-weight: 500;
+    color: #2b2e4e;
+}
+.item-info .price
+{
+    font-size: 18px;
+    font-weight: 700;
+    font-style: bold;
+    margin-bottom: 10px;
+}
+.item-info input
+{
+    width: 90px;
+    height: 30px;
+    background-color: green;
+    border: 1px solid #333;
+    border-radius: 7px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: capitalize;
+}
+.item-info input:hover
+{
+    background-color: #fff;
+    color: green;
+}
+
+@media (max-width:900px)
+{
+    .container .item
+    {
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+        
+    }
+}
+@media (max-width:700px)
+{
+    .container .item
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+        
+    }
+}
+@media (max-width:400px)
+{
+    .container .item
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+        
+    }
+}

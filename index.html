@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="js/slider.js">
+    <link rel="stylesheet" href="css/search.css">
+
+</head>
+<body>
+    <div class="main-container">
+        <div class="top-bar">
+            <!-- ***header start***-->
+         <div class="header">
+            <div class="logo">
+                <a href="#"><span>E</span>-commerce</a>
+            </div>
+            <div class="search">
+                <div class="search-categories">
+                    <select name="categories" id="category-select">
+                        <option value="all">all categories</option>
+                        <option value="shoes">Shoes</option>
+                        <option value="shoes">Clothes</option>
+                        <option value="shoes">Kitchen</option>
+                        <option value="shoes">Accessories</option>
+                        <option value="clothes">Clothes</option>
+                    </select>
+
+                </div>
+                <input type="search" id="search" placeholder="search..." class="fas fa-search">
+                <button onclick="search()" class="fas fa-search"></button>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#" onclick="scrollToContact(); return false;">Contacts</a></li>
+                    <li><a href="#" onclick="scrollToAbout(); return false;">About</a></li>
+                </ul>
+            </div>
+           <!--<div class="products">
+                <ul>
+                    <li><select name="" id=""></select></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>--> 
+            <div class="shopping-cart">
+                <a href="cart.html" class="fas fa-shopping-cart"> Cart</a>
+            </div>
+            <div class="account">
+                <a href="login.html" class="fas fa-sign-in-alt"><span> <i>login</i></span></a>
+            </div>
+         </div>
+        <!-- ***header end***-->
+        </div>
+        <div class="body-container">
+            <!-- ***Hero section start***-->
+         <section class="hero hidden">
+            <div class="sales">
+                <ul>
+                    <li><a href="#">Special Offer</a></li>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Most sale</a></li>
+                </ul>
+            </div>
+
+            <div class="container">
+                <div class="banner">
+                    <div class="slider">
+                        <div class="slides">
+                            <div class="catchy">
+                                <div class="headline">
+                                    <p id="date"></p>
+                                    <p>GATEWAY DEALS<br> UPTO <span>60% OFF</span></p>
+                                    <a href="products/jordan.html"><b>Shop Now</b></a>
+                                </div>
+                                <div class="banner-img">
+                                    <img src="pics/jordan 1.png" alt="banner">
+                                </div>
+                            </div>
+                            <div class="catchy">
+                                <div class="headline" id="catchy2">
+                                    <p id="date"></p>
+                                    <p>GATEWAY DEALS<br> UPTO <span>60% OFF</span></p>
+                                    <a href="products/jordan.html"><b>Shop Now</b></a>
+                                </div>
+                                <div class="banner-img">
+                                    <img src="pics/j1.jpg" alt="banner">
+                                </div>
+                            </div>
+                            <div class="catchy">
+                                <div class="headline" id="catchy3">
+                                    <p id="date"></p>
+                                    <p>GATEWAY DEALS<br> UPTO <span>60% OFF</span></p>
+                                    <a href="products/jordan.html"><b>Shop Now</b></a>
+                                </div>
+                                <div class="banner-img">
+                                    <img src="pics/J-1.jpg" alt="banner">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <p>Hot Categories</p>
+                        <ul>
+                            <li><a href="shoes.html" class="fa fa-shoe-prints">shoes</a></li>
+                            <li><a href="#" class="fa fa-tshirt">clothes</a></li>
+                            <li><a href="#" class="fa fa-hat-cowboy-side">Accessories</a></li>
+                            <li><a href="#">Laptops</a></li>
+                            <li><a href="#">Phones</a></li>
+                            <li><a href="#">Automotive</a></li>
+                            <li><a href="#">Kitchen</a></li>
+                            <li><a href="#">Beauty & care</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- ***Hero section end***-->
+        <!-- ***Product-listing section start***-->
+         <section id="category-select" class="product-listing hidden">
+            <div class="container">
+                <div class="product-listing-header">
+                    <h2>Explore Categoties</h2>
+                </div>
+                <div class="product-list">
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="shoes.html">
+                                <img src="pics/J1 orange.jpg" alt="nike shoes">
+                                <h4>shoes</h4>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="pics/A1.jpg" alt="nike shoes">
+                                <h4>laptops</h4>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="pics/J1 orange.jpg" alt="nike shoes">
+                                <h4>Kitchen</h4>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="pics/shopping bag.jpg" alt="nike shoes">
+                                <h4>clothes</h4>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="product-item">
+                        <div class="product-img">
+                            <a href="#">
+                                <img src="pics/cardmapr-nl-pwxESDWRwDE-unsplash.jpg" alt="nike shoes">
+                                <h4>beverages</h4>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+         </section>
+        <!-- ***Product-listing section end***-->
+
+        <!-- ***Products-offers section start***-->
+         <section id="category-select" class="product-offers ">
+            <div class="container">
+                <button id="scroll-left" onclick="prevSlide()"><</button>
+                <div class="product-deals">
+                    <div class="item-info" id="link-deals">
+                        <div class="link-deals">
+                            <a href="#">
+                                <h2>Today's Hot Deals</h2>
+                                <p>all with free shipping</p>
+                                <a href="#"><button>shop now</button></a>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <a href="#">
+                            <img src="pics/A-1 (2).jpg" alt="img 1">
+                            <p>Iphone 14 pro max 128GB <br>Network Unlocked Very Good...</p>
+                            <p id="price">$700 <span>$900</span></p>
+                        </a>
+                    </div>
+                    <div class="item-info">
+                        <a href="#">
+                            <img src="pics/A-1 (2).jpg" alt="img 2">
+                            <p>Iphone 14 pro max 128GB <br>Network Unlocked Very Good...</p>
+                            <p id="price">$700 <span>$900</span></p>
+                        </a>
+                    </div>
+                    <div class="item-info">
+                        <a href="#">
+                            <img src="pics/A-1 (2).jpg" alt="img 3">
+                            <p>Iphone 14 pro max 128GB <br>Network Unlocked Very Good...</p>
+                            <p id="price">$700 <span>$900</span></p>
+                        </a>
+                    </div>
+                    <div class="item-info">
+                        <a href="#">
+                            <img src="pics/A-1 (2).jpg" alt="img 4">
+                            <p>Iphone 14 pro max 128GB <br>Network Unlocked Very Good...</p>
+                            <p id="price">$700 <span>$900</span></p>
+                        </a>
+                    </div>
+                    <div class="item-info">
+                        <a href="#">
+                            <img src="pics/A-1 (2).jpg" alt="img 5">
+                            <p>Iphone 14 pro max 128GB <br>Network Unlocked Very Good...</p>
+                            <p id="price">$700 <span>$900</span></p>
+                        </a>
+                    </div>
+                    <div class="item-info">
+                        <a href="#">
+                            <img src="pics/A-1 (2).jpg" alt="img 6">
+                            <p>Iphone 14 pro max 128GB <br>Network Unlocked Very Good...</p>
+                            <p id="price">$700 <span>$900</span></p>
+                        </a>
+                    </div>
+                    <div class="item-info">
+                        <a href="#">
+                            <img src="pics/A-1 (2).jpg" alt="img 7">
+                            <p>Iphone 14 pro max 128GB <br>Network Unlocked Very Good...</p>
+                            <p id="price">$700 <span>$900</span></p>
+                        </a>
+                    </div>
+                    <div class="item-info">
+                        <a href="#">
+                            <img src="pics/A-1 (2).jpg" alt="img 8">
+                            <p>Iphone 14 pro max 128GB <br>Network Unlocked Very Good...</p>
+                            <p id="price">$700 <span>$900</span></p>
+                        </a>
+                    </div>
+                </div>
+                <button id="scroll-right" onclick="nextSlide()">></button>
+            </div>
+         </section>
+        <!-- ***Products-offers section end***-->
+
+        <!-- *** About section start***-->
+         <section class="about" id="about">
+            <div class="about-container">
+                <div class="about-head">
+                    <h2>About</h2>
+                </div>
+                <div class="about-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero odio dolorem illum possimus, rem adipisci eveniet, corporis, dolore nam ex iure. Nemo quo quis libero adipisci vel numquam alias. Eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. At aspernatur quaerat, voluptates fugit repellendus tenetur aliquam. Quasi, suscipit a magni temporibus recusandae tempore laborum praesentium soluta architecto ad consectetur ea.</p>
+                </div>
+            </div>
+
+         </section>
+        <!-- *** About section end***-->
+
+        <!-- *** Add features section start***-->
+         <section class="add-features">
+
+         </section>
+        <!-- *** Add features section end***-->
+        <!-- *** footer section start***-->
+         <section class="footer">
+            <div class="row">
+                <div class="footer-container">
+                    <div class="group">
+                        <div class="group-info">
+                            <h2>Shopping guideline</h2>
+                            <ul>
+                                <li><a href="#">How to pay</a></li>
+                                <li><a href="#">How to shop</a></li>
+                                <li><a href="#">Forgot your password?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="group-info">
+                            <h2>Customer help</h2>
+                            <ul>
+                                <li><a href="#">terms & conditions</a></li>
+                                <li><a href="#">After sale policy</a></li>
+                                <li><a href="#">Deleivery & Shipping</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div class="group-info">
+                            <h2>Bussiness</h2>
+                            <ul>
+                                <li><a href="#">Want to sell something?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="group" id="contact">
+                        <div class="group-info">
+                            <h2>Contact us</h2>
+                            <ul>
+                                <li><a href="#" class="fa fa-whatsapp">Whatsapp</a></li>
+                                <li><a href="#" class="fa fa-twitter">twitter</a></li>
+                                <li><a href="#" class="fa fa-envelope">email</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <p>&copy; ecommerce2024</p>
+                </footer>
+            </div>
+         </section>
+        <!-- *** footer section end***-->        
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/search.js"></script>
+    
+</body>
+</html>

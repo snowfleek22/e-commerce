@@ -1,0 +1,105 @@
+body
+{
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    background-image: url("logins/shopping bag.jpg");
+    background-repeat: no-repeat;
+    max-height: 100%;
+    width: 100%;
+}
+img
+{
+    width: 100%;
+    opacity: 101;
+    margin: auto;
+}
+
+.form
+{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    position: relative;
+    display: block;
+    padding: 50px 0;
+    max-height: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.row
+{
+    position: relative;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    max-width: 50%;
+    padding: 20px 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #333333;
+    opacity: 101;
+}
+.row h4
+{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+ .row form
+{
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    font-size: 16px;
+}
+.row form .input, .row .submit
+{
+    margin-bottom: 30px;
+    display: block;
+
+}
+.input label
+{
+    margin-bottom: 10px;
+    text-align: left;
+    display: block;
+    text-transform: capitalize;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"]
+{
+    width: 100%;
+    height: 20px;
+}
+input[type="submit"]
+{
+    width: 70px;
+    height: 30px;
+    background-color: green;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+    color: greenyellow;
+    border: 1px solid #333;
+}
+input[type="submit"]:hover
+{
+    background-color: greenyellow;
+    color: green;
+}

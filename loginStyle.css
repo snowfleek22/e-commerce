@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)),url("antonio-cuellar-KDS5lCrj_ew-unsplash.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+}
+.logo img {
+	width: 100px;
+}
+.form-box
+{
+	width: 420px;
+	height: 500px;
+	position: relative;
+	margin: 6% auto;
+	background: rgba(212, 208, 208, 0.562);
+	padding: 0;
+	border-radius: 7px;
+	overflow-x: hidden;
+	box-shadow: 0px 0px 100px rgba(0,0,0,0.4);
+	scrollbar-width: none;
+}
+.form-box .overflow
+{
+	display: block;
+	overflow: hidden;
+}
+.form-header
+{
+	position: fixed;
+	margin: auto;
+	background: color(srgb red green blue);
+	padding: 0 100px;
+	margin: auto;
+	opacity: 100%;
+	justify-content: center;
+	z-index: 101;
+	backdrop-filter: saturate(100%) blur(70px);
+}
+.button-box
+{
+	width: 220px;
+	margin: 35px auto;
+	position: relative;
+	box-shadow: 0 0 20px 9px rgba(0,0,0,.1);
+	border-radius: 30px;
+}
+
+.toggle-btn
+{
+	padding: 10px 30px;
+	cursor: pointer;
+	background: transparent;
+	position: relative;
+	border: 0;
+	outline: none;
+}
+
+#btn
+{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: linear-gradient(to right, #FA4B37, #DF2771);
+	border-radius: 30px;
+	transition: 0.5s;
+}
+.social-icons
+{
+	margin: 30px auto;
+	text-align: center;
+}
+.social-icons img
+{
+	width: 30px;
+	margin: 0 7px;
+	cursor: pointer;
+	opacity: 0.85;
+}
+input
+{
+	color: #010101;
+	font-size: 13px;
+	font-weight: 700;
+	background: transparent;
+}
+
+.input-group
+{
+	top: 180px;
+	padding-bottom: 30px;
+	position: absolute;
+	width: 320px;
+	transition: .5s;
+	font-size: 13px;
+	color: #010101;
+	z-index: 10;
+}
+.inp {
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	justify-content: center;
+}
+.inp img{
+	width: 20px;
+	padding-right: 10px;
+}
+.input-field
+{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid rgba(0,0,0,0.4);
+	outline: none;
+	background: transparent;
+	color: rgba(0,0,0);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: rgba(0,0,0,0.7);
+	/*opacity: 1;  Firefox */
+}
+#register .input-field {
+	color: rgba(0,0,0,0.8);
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: linear-gradient(to right, #FA4B37, #DF2771);
+	color: #fff;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+
+.reg-btn {
+	background: gray;
+}
+.check-box
+{
+	cursor: pointer;
+	margin: 30px 10px 30px 0;
+}
+
+.instead {
+	margin-top: 10px;
+}
+.instead h3 {
+    overflow: hidden;
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+}
+.instead h3:before,
+.instead h3:after {
+    background-color: rgba(0,0,0,0.5);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+}
+.instead h3:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+.instead h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+span
+{
+	color: rgba(0,0,0,0.8);
+	font-size: 12px;
+}
+
+#login
+{
+	left: 50px;
+	overflow: hidden;
+}
+#register
+{
+	left: 450px;
+	height: auto;
+}
+
+.other {
+	display: grid;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+.connect {
+	display: flex;
+	margin: 10px;
+	padding: 0px 30px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	border: 1px solid lightgray;
+	cursor: pointer;
+	outline: none;
+	/*border-radius: 10px;*/
+	background: #fff3;
+}
+.connect:hover {
+	background: #fff8;
+}
+.connect img {
+	padding: 5px;
+	width: 25px;
+}
+.connect span {
+	padding: 10px;
+	font-size: 15px;
+}
