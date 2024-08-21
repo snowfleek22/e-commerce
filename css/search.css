@@ -1,8 +1,0 @@
-/* Example CSS */
-.product-item {
-    display: none; /* Hide items initially */
-}
-
-.product-item.show {
-    display: block; /* Show matched items */
-}

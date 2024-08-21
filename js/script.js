@@ -35,4 +35,4 @@ const w = x.getDate();
 const y = x.getMonth()+1;
 const z = x.getFullYear();
 let v = w + "/" + y + "/"+ z; 
-document.getElementById('date').innerHTML=(v)
+const date = document.getElementById('date').innerHTML = v;

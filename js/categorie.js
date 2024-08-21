@@ -13,7 +13,8 @@ function addToCart(event) {
         name: itemName,
         price: price,
         quantity: 1,
-        image: imageSrc
+        image: imageSrc,
+        color: "any"
     };
     
     cart.push(item);
